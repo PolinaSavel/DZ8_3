@@ -9,19 +9,22 @@ public class Lesson_8_3 {
         shar.displayInfo();
         Circle shar1 = new Circle(5);
         shar1.displayInfo();
+        Circle shar2 = new Circle();
+        shar2.displayInfo();
     }
 }
 class Circle{
     int radius;
-
     public Circle (){
-        radius = 1;
+        this(18);
+
     }
-    public Circle (int a){
-        this.radius = a;
+    public Circle (int radius){
+        this.radius = radius;
     }
     void displayInfo(){
         System.out.printf("Радиус: %d \t ", radius);
         System.out.println("Площадь равна: "+ (3.14*radius*radius));
     }
 }
+
