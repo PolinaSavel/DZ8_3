@@ -14,15 +14,12 @@ public class Lesson_8_3 {
 class Circle{
     int radius;
 
-
     public Circle (){
         radius = 1;
-
     }
     public Circle (int a){
         this.radius = a;
     }
-
     void displayInfo(){
         System.out.printf("Радиус: %d \t ", radius);
         System.out.println("Площадь равна: "+ (3.14*radius*radius));
