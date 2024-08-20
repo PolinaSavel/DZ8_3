@@ -1,0 +1,30 @@
+/*Создайте класс Circle с полем radius. Добавьте конструктор, который принимает радиус и устанавливает
+его значение. Также добавьте конструктор по умолчанию, который вызывает другой конструктор и устанавливает радиус
+равным 1. В методе main создайте два объекта Circle: один с радиусом по умолчанию, другой с радиусом 5.
+Выведите площадь каждого круга.
+ */
+public class Lesson_8_3 {
+    public static void main(String[] args) {
+        Circle shar = new Circle();
+        shar.displayInfo();
+        Circle shar1 = new Circle(5);
+        shar1.displayInfo();
+    }
+}
+class Circle{
+    int radius;
+
+
+    public Circle (){
+        radius = 1;
+
+    }
+    public Circle (int a){
+        this.radius = a;
+    }
+
+    void displayInfo(){
+        System.out.printf("Радиус: %d \t ", radius);
+        System.out.println("Площадь равна: "+ (3.14*radius*radius));
+    }
+}
